@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 function FieldContainer({field, onCellClick}) {
 
 
-
   return (
     <>
       <FieldLayout field={field} onCellClick={onCellClick}/>
