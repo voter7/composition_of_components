@@ -1,0 +1,30 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 8px; /* немного больше зазора между клетками */
+  justify-content: center; /* по центру */
+  margin: 100px auto;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #555;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+  background-color: #f9f9f9;
+}
